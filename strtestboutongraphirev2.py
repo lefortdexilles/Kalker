@@ -1,8 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
 import plotly.express as px
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import streamlit as st
 
 st.set_page_config(page_title="Graphique pluriannuel ire", layout="wide")
