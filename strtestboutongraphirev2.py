@@ -5,7 +5,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Graphique pluriannuel ire", layout="wide")
 
-df = pd.read_excel('Panda10.xlsx', encoding='utf_8')
+df = pd.read_excel('Panda10.xlsx')
 
 st.sidebar.header('Entrer le nom du pays')
 p_select = st.sidebar.selectbox("Pays:", ('AFGHANISTAN',	'AFRIQUE DU SUD (Johannesburg, Pretoria)',	'ALBANIE',	'ALGERIE (autres villes)',	'ALLEMAGNE (autres villes)',	'ANDORRE',	'ANGOLA',	'ANTIGUA-ET-BARBUDA',	'ARABIE SAOUDITE',	'ARGENTINE',	'ARMENIE',	'AUSTRALIE (Sydney)',	'AUTRICHE',	'AZERBAIDJAN',	'BAHREIN',	'BANGLADESH',	'BARBADE',	'BELGIQUE',	'BELIZE',	'BENIN',	'BHOUTAN',	'BIELORUSSIE',	'BIRMANIE',	'BOLIVIE',	'BOSNIE-HERZEGOVINE',	'BOTSWANA',	'BRESIL (Brasilia)',	'BRUNEI',	'BULGARIE',	'BURKINA FASO',	'BURUNDI',	'CAMBODGE',	'CAMEROUN (autres villes)',	'CANADA (Ottawa)',	'CAP-VERT',	'CHILI',	'CHINE (Pékin)',	'CHYPRE',	'COLOMBIE',	'COMORES',	'CONGO',	'CONGO RDC',	'COREE DU SUD',	'COSTA RICA',	'COTE D IVOIRE',	'CROATIE',	'CUBA',	'DANEMARK',	'DJIBOUTI', 'DOMINIQUE',	'EGYPTE',	'EMIRATS ARABES UNIS (Abu-Dhabi)',	'EQUATEUR',	'ERYTHREE',	'ESPAGNE',	'ESTONIE',	'ETATS-UNIS (Washington, Norfolk)',	'ETHIOPIE',	'FIDJI',	'FINLANDE',	'GABON',	'GAMBIE',	'GEORGIE',	'GHANA',	'GRECE',	'GRENADE',	'GUATEMALA',	'GUINEE',	'GUINEE EQUATORIALE',	'GUINEE-BISSAO',	'GUYANA',	'HAITI',	'HONDURAS',	'HONGRIE',	'INDE (New Delhi, Calcutta)',	'INDONESIE',	'IRAK (autres villes)',	'IRAN',	'IRLANDE',	'ISLANDE',	'ISRAEL',	'ITALIE (autres villes)',
