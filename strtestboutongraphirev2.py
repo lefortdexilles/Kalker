@@ -17,7 +17,7 @@ p_select = st.sidebar.selectbox("Pays:", ('AFGHANISTAN',	'AFRIQUE DU SUD (Johann
 new_df=df[df.Country==p_select]  
 
 
-st.text('ire en janvier 2009 (base 100)')
+st.text('ire (base 100) en janvier 2009')
 new_df.iloc[0,1]
 st.text('ire en janvier 2023')
 new_df.iloc[0,6]
