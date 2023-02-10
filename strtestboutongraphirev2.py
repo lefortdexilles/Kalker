@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import plotly.express as px
+import openpyxl as px
 import streamlit as st
 
 st.set_page_config(page_title="Graphique pluriannuel ire", layout="wide")
