@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import plotly.express as px
+import plotly_express as ptx
 import streamlit as st
 
 st.set_page_config(page_title="Graphique pluriannuel ire", layout="wide")
@@ -24,7 +24,7 @@ new_df.iloc[0,6]
 
 new_df=df[df.Country==p_select]  
 
-graph = px.line(x = [2009,2012,2015,2018,2020,2023],
+graph = ptx.line(x = [2009,2012,2015,2018,2020,2023],
                 y =  [new_df.iloc[0,1],
 new_df.iloc[0,2],
 new_df.iloc[0,3],
