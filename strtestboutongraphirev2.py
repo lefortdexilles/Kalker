@@ -1,9 +1,21 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import requests
 import plotly_express as ptx
 import streamlit as st
+from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Graphique pluriannuel ire", layout="wide")
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_kwfcur7f.json")
+
+st_lottie(lottie_coding, height=300, key="coding")
 
 df = pd.read_excel('Panda10.xlsx')
 
