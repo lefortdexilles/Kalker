@@ -10,16 +10,16 @@ from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Graphique pluriannuel ire", layout="wide")
 
-names = ["Pascale Gay", "Axel Nogue", "Moi"]
-usernames = ["Pascale G", "Axel N", "Ego"]
+noms = ("Pascale Gay", "Axel Nogue", "Moi")
+identifs = ("Pascale G", "Axel N", "Ego")
 
 file_path = Path(__file__).parent / "hash-dutruc.pkl"
 with file_path.open("rb") as file:
     hashed_passwords = pickle.load(file)
 
-authenticator = stauth.Authenticate(names, usernames, hashed_passwords, "graph", "abcdef", cookie_expiry_days=4)
+authenticator = stauth.Authenticate(noms, identifs, hashed_passwords, cookie_expiry_days=4)
 
-name, authentication_status, username = authenticator.login("Login", "main")
+names, authentication_status, usernames = authenticator.login("Login", "main")
 
 if authentication_status== False:
     st.error("identifiants incorrects")
