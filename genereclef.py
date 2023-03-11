@@ -8,9 +8,9 @@ usernames = ["Pascale G", "Axel N", "Ego"]
 
 passwords = ["abc123", "def789", "ihg456"]
 
-hashed_password = stauth.Hasher(passwords).generate()
+hashed_passwords = stauth.Hasher(passwords).generate()
 
 file_path = Path(__file__).parent / "hash-dutruc.pkl"
 with file_path.open("wb") as file:
-    pickle.dump(hashed_password, file)
+    pickle.dump(hashed_passwords, file)
 
