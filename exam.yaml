@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    pgay:
+      email: pascale.gay-gressin@diplomatie.gouv.fr
+      name: Pascale Gay
+      password: abc # To be replaced with hashed password
+    anogue:
+      email: axel.nogue@diplomatie.gouv.fr
+      name: Axel Nogue
+      password: def # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: 'motdepasse' # Must be string
+  name: 'coucou'
+preauthorized:
+  emails:
+  - christophe.billaude@gmail.com
