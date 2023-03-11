@@ -69,3 +69,5 @@ if authentication_status== True:
 
     st.plotly_chart(graph)
 
+authenticator.logout("Logout", "sidebar")
+st.sidebar.title(f"Welcome {noms}")
