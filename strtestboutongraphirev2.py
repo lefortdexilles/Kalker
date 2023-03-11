@@ -15,7 +15,21 @@ usernames = ["Pascale G", "Axel N", "Ego"]
 
 file_path = Path(__file__).parent / "hash-dutruc.pkl"
 with file_path.open("rb") as file:
-    pickle.dump(hashed_password, file)
+    hashed_passwords = pickle.load(file)
+
+authenticator = stauth.Authenticate(names, usernames, hashed_passwords, "graph", "abcdef", cookie_expiry_days=4)
+
+name, authentication_status, username = authenticator.login("Login", "main")
+
+if authentication_status== False:
+    st.error("identifiants incorrects")
+
+if authentication_status== none:
+    st.warning("Entrez vos codes svp")
+
+if authentication_status== True:
+
+
 
 def load_lottieurl(url):
     r = requests.get(url)
