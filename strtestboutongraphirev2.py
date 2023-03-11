@@ -1,11 +1,21 @@
+import pickle
+from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 import requests
 import plotly_express as ptx
 import streamlit as st
+import streamlit_authenticator as stauth
 from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Graphique pluriannuel ire", layout="wide")
+
+names = ["Pascale Gay", "Axel Nogue", "Moi"]
+usernames = ["Pascale G", "Axel N", "Ego"]
+
+file_path = Path(__file__).parent / "hash-dutruc.pkl"
+with file_path.open("rb") as file:
+    pickle.dump(hashed_password, file)
 
 def load_lottieurl(url):
     r = requests.get(url)
