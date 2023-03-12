@@ -10,7 +10,7 @@ from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Graphique pluriannuel ire", layout="wide")
 
-noms = ("Pascale Gay", "Axel Nogue", "Moi")
+noms = ("PG", "AN", "Moi")
 identifs = ("Pascale G", "Axel N", "Ego")
 
 file_path = Path(__file__).parent / "hash-dutruc.pkl"
