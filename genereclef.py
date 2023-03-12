@@ -3,8 +3,8 @@ from pathlib import Path
 
 import streamlit_authenticator as stauth
 
-noms = ("Pascale Gay", "Axel Nogue", "Moi")
-identifs = ("Pascale G", "Axel N", "Ego")
+noms = ("PG", "AN", "Moi")
+identifs = ("PG", "AN", "Ego")
 
 passwords = ("abc123", "def789", "ihg456")
 
