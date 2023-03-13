@@ -25,7 +25,7 @@ if authentication_status== False:
     st.error("identifiants incorrects")
 
 if authentication_status== None:
-    st.warning("Entrez vos codes svp")
+    st.warning("Entrer vos codes svp")
 
 if authentication_status== True:
 
